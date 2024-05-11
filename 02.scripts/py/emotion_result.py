@@ -1,9 +1,9 @@
 import numpy as np
 
 def emotion_result(result):
-    emotion_dict = {'공포': str(round(result[0][0]*100,2))+'%', '분노': str(round(result[0][1]*100,2))+'%',
-                    '슬픔': str(round(result[0][2]*100,2))+'%', '중립': str(round(result[0][3]*100,2))+'%',
-                    '행복': str(round(result[0][4]*100,2))+'%', '혐오': str(round(result[0][5]*100,2))+'%'}
+    emotion_dict = {'공포': round(result[0][0]*100,2), '분노': round(result[0][1]*100,2),
+                    '슬픔': round(result[0][2]*100,2), '중립': round(result[0][3]*100,2),
+                    '행복': round(result[0][4]*100,2), '혐오': round(result[0][5]*100,2)}
     final_emotion = ''
 
     if np.argmax(result) == 0:
