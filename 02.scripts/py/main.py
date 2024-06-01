@@ -74,13 +74,13 @@ def main(record_type, goal, diary, pos_list):
         if final_emotion in ['공포', '분노', '슬픔', '혐오']:
             txt += ' 오늘의 감정은 ' + final_emotion + '입니다. 감정에 따른 피드백 부탁드립니다.'
             feedback = get_feedback(txt)
-            keywords = get_keywords(pos_list, diary)
+            keywords = get_keywords(pos_list, new_diary)
             return final_emotion, emotion_dict, feedback, keywords
             
         elif final_emotion in ['중립', '행복']:
             txt += ' 오늘의 감정은 ' + final_emotion + '입니다. 감정에 따른 피드백 부탁드립니다.'
             feedback = get_feedback(txt)
-            kw = extract_keywords(diary)
+            kw = extract_keywords(new_diary)
             keywords = []
             for i in range(len(kw)):
                 keywords.append(kw[i][0])

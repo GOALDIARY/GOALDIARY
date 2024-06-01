@@ -11,5 +11,5 @@ def get_feedback(txt):
         }
     ]
     )
-    
-    return response.choices[0].message.content
+    feedback = response.choices[0].message.content.replace('\n\n', ' ')
+    return feedback
