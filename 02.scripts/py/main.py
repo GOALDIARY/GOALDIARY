@@ -22,7 +22,7 @@ def main(record_type, goal, diary, pos_list):
         text_model = joblib.load('C:/Python Data/model/text_svc_model.pkl')
         
         d = pd.DataFrame(columns=['발화문', 'final_label'])
-        d.loc[0] = [txt,'']
+        d.loc[0] = [diary,'']
         t = text_embedding(model_name = 'jhgan/ko-sbert-multitask').transform(d, record_type)
         t_scaled = text_scaler.transform(t)
         
