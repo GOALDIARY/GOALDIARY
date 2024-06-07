@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CapstoneProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="ID">"ID"</string>
+    <string name="PW">"PW"</string>
+    <string name="SignIn">"Sign in"</string>
+    <string name="SignUp">"Sign up"</string>
+    <string name="NEXT">"NEXT"</string>
+    <string name="NAME">"NAME"</string>
+    <string name="Information">"Information"</string>
+    <string name="btn_setGoals">
+        <![CDATA[<b>목표 설정하기</b><br><small>이루고자 하는 목표를 설정해 주세요!</small>]]>
+    </string>
+</resources>

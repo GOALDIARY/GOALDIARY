@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragment.HomeFragment">
+
+    <!-- 유저 프로필 -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/testimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.095"
+        app:civ_border_color="#00BCD4"
+        app:civ_border_overlay="true"
+        tools:ignore="MissingConstraints" />
+    <!-- 유저 닉네임 -->
+    <TextView
+        android:id="@+id/user_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nickname"
+        android:textSize="22sp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@id/profile_image"
+        app:layout_constraintTop_toTopOf="@id/profile_image"
+        app:layout_constraintBottom_toBottomOf="@id/profile_image" />
+    <!-- 목표 설정하기 버튼 -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="230dp"
+        android:elevation="3dp"
+        android:src="@drawable/goals"
+        app:layout_constraintBottom_toTopOf="@+id/btnViewGoals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSetGoals"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/main_button_shape"
+        android:padding="32dp"
+        android:text="목표 설정하기\n이루고자 하는 목표를 설정하기!"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:paddingStart="90dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_image" />
+
+    <!-- 목표 리스트 보기 버튼 -->
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:elevation="3dp"
+        android:src="@drawable/goals_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59" />
+
+    <android.widget.Button
+        android:id="@+id/btnViewGoals"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_button_shape"
+        android:text="목표 리스트 보기\n목표 달성 진행사항을 확인하기!"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:paddingStart="90dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSetGoals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

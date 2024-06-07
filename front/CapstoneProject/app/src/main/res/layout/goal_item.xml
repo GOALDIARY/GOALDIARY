@@ -1,0 +1,97 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- 목표 설정 버튼 -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSetGoals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_button_shape"
+        android:gravity="center_vertical|start"
+        android:paddingStart="60dp"
+        android:paddingTop="32dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="32dp"
+        android:text="Goal"
+        android:textStyle="bold"
+        android:layout_marginTop="56dp" /> <!-- MarginTop을 조정하여 버튼을 아래로 이동 -->
+
+    <!-- 이미지 뷰를 목표 설정 버튼과 겹치게 위치 -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/btnSetGoals"
+        android:layout_alignTop="@id/btnSetGoals"
+        android:layout_alignStart="@id/btnSetGoals"
+        android:elevation="3dp"
+        android:src="@drawable/goals"
+        android:layout_marginStart="16dp" />
+
+    <!-- 진행도 텍스트를 목표 설정 버튼과 겹치게 위치 -->
+<!--    <TextView-->
+<!--        android:id="@+id/progressText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@id/btnSetGoals"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:elevation="3dp"-->
+<!--        android:text="진행도 : 0%"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+    <!-- 표준 감정 텍스트를 목표 설정 버튼과 겹치게 위치 -->
+<!--    <TextView-->
+<!--        android:id="@+id/emotionText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/progressText"-->
+<!--        android:layout_alignStart="@id/progressText"-->
+<!--        android:elevation="3dp"-->
+<!--        android:text="표준 감정 : 없음"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:layout_marginEnd="6dp" />-->
+
+    <!-- 수정 및 삭제 버튼을 목표 설정 버튼의 상단에 위치 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="18dp">
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="4dp"
+            android:text="수정"
+            android:background="@android:color/transparent"
+            android:textColor="#414141" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="4dp"
+            android:text="삭제"
+            android:background="@android:color/transparent"
+            android:textColor="#414141" />
+    </LinearLayout>
+
+</RelativeLayout>

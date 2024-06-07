@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SignupFragment">
+
+    <Button
+        android:id="@+id/SigninBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/mint"
+        android:backgroundTint="@color/white"
+        android:text="@string/SignIn"
+        android:textSize="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintWidth_percent="0.3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/SignInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/SignUp"
+        android:textColor="@color/mint"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="이름"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@id/InputN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <EditText
+        android:id="@+id/InputN"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/NAME"
+        android:padding="15dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/login_input"
+        android:layout_marginTop="300dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="아이디"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@id/InputId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <EditText
+        android:id="@+id/InputId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/ID"
+        android:padding="15dp"
+        android:inputType="text"
+        android:background="@drawable/login_input"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InputN"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="비밀번호"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@id/InputPw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <EditText
+        android:id="@+id/InputPw"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/PW"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:background="@drawable/login_input"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InputId"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="긍정 키워드"
+            android:textColor="@color/grey"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toTopOf="@id/InputPositiveKeyword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.98" />
+
+    <EditText
+            android:id="@+id/InputPositiveKeyword"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:hint="긍정 키워드"
+            android:padding="15dp"
+            android:inputType="text"
+            android:background="@drawable/login_input"
+            app:layout_constraintWidth_percent="0.8"
+            app:layout_constraintHeight_percent="0.07"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/InputPw"
+            app:layout_constraintVertical_bias="0.0"/>
+
+    <Button
+        android:id="@+id/NextBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/mint"
+        android:text="Sing up"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InputPositiveKeyword"
+        app:layout_constraintWidth_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

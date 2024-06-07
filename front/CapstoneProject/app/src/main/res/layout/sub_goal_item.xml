@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:gravity="center_horizontal">
+
+    <!-- 세부 목표 입력 -->
+    <EditText
+            android:id="@+id/InputSubGoal"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:hint="세부 목표를 입력하세요."
+            android:textSize="12sp"
+            android:padding="9dp"
+            android:inputType="text"
+            android:background="@drawable/login_input" />
+
+    <!-- 시작 날짜 텍스트 -->
+    <TextView
+            android:id="@+id/startSubGoalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="-110dp"
+            android:fontFamily="sans-serif-black"
+            android:text="시작날짜"
+            android:textColor="@color/grey"
+            android:textSize="15dp" />
+
+    <!-- 시작 날짜 입력칸 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+        <EditText
+                android:id="@+id/SubStartYear"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:hint="년"
+                android:gravity="end"
+                android:inputType="number"
+                android:padding="9dp"
+                android:textSize="12sp"
+                android:background="@drawable/login_input" />
+
+        <EditText
+                android:id="@+id/SubStartMonth"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:hint="월"
+                android:gravity="end"
+                android:inputType="number"
+                android:padding="9dp"
+                android:textSize="12sp"
+                android:background="@drawable/login_input" />
+
+        <EditText
+                android:id="@+id/SubStartDay"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:hint="일"
+                android:gravity="end"
+                android:inputType="number"
+                android:padding="9dp"
+                android:textSize="12sp"
+                android:background="@drawable/login_input" />
+    </LinearLayout>
+
+    <!-- 달성 날짜 텍스트 -->
+    <TextView
+            android:id="@+id/endSubGoalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-110dp"
+            android:fontFamily="sans-serif-black"
+            android:text="달성날짜"
+            android:textColor="@color/grey"
+            android:textSize="15dp" />
+
+    <!-- 달성 날짜 입력칸 -->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+        <EditText
+                android:id="@+id/SubEndYear"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:hint="년"
+                android:gravity="end"
+                android:inputType="number"
+                android:padding="9dp"
+                android:textSize="12sp"
+                android:background="@drawable/login_input" />
+
+        <EditText
+                android:id="@+id/SubEndMonth"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:hint="월"
+                android:gravity="end"
+                android:inputType="number"
+                android:padding="9dp"
+                android:textSize="12sp"
+                android:background="@drawable/login_input" />
+
+        <EditText
+                android:id="@+id/SubEndDay"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:hint="일"
+                android:gravity="end"
+                android:inputType="number"
+                android:padding="9dp"
+                android:textSize="12sp"
+                android:background="@drawable/login_input" />
+    </LinearLayout>
+</LinearLayout>

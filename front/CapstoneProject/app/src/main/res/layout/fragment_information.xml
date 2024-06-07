@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.InformationFragment">
+
+    <Button
+        android:id="@+id/SigninBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/mint"
+        android:backgroundTint="@color/white"
+        android:text="@string/SignIn"
+        android:textSize="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintWidth_percent="0.3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/SignInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Information"
+        android:textColor="@color/mint"
+        android:textSize="40dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="좋아하는 운동"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@id/InputSports"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <EditText
+        android:id="@+id/InputSports"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="축구, 농구, 야구 . . ."
+        android:padding="15dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/login_input"
+        android:layout_marginTop="300dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="좋아하는 음악"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@id/InputMusic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <EditText
+        android:id="@+id/InputMusic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:hint="발라드, 힙합, 클래식 . . ."
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:background="@drawable/login_input"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InputSports"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="좋아하는 음식"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@id/InputFood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <EditText
+        android:id="@+id/InputFood"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:hint="라면, 빵, 치킨 . . ."
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:background="@drawable/login_input"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InputMusic"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="좋아하는 취미"
+        android:textColor="@color/grey"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@id/InputHobby"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <EditText
+        android:id="@+id/InputHobby"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:hint="여행, 악기 연주 . . ."
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:background="@drawable/login_input"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InputFood"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/mint"
+        android:text="Sign up"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InputHobby"
+        app:layout_constraintWidth_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
