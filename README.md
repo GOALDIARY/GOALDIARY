@@ -34,6 +34,9 @@
 * 문제해결 능력 향상
 * 성취감 향상
 
+## 개발환경
+![그림9](https://github.com/user-attachments/assets/42b90fa0-3e98-4bc6-807f-ceda726acf1a)
+
 ## 시스템 구조
 ![그림6](https://github.com/user-attachments/assets/0541e493-467c-4c24-a5c2-9f89a08a127f)
 <br><br><br><br><br>
