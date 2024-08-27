@@ -9,7 +9,7 @@
 * 이런 점을 고려하여 어떻게 하면 일지를 작성하는 사람들이 더 많아질 수 있을까 생각해보았고, 최종적으로 목표 일지를 제작하기로 결정했다.
 
 ## 서비스 소개
-![그림8](https://github.com/user-attachments/assets/51c94236-7a00-4bbe-af9b-57a9f835f4aa)
+![그림](https://github.com/user-attachments/assets/9b0f4666-5e2f-49e8-a7f6-ce769128a115)
 * 사용자만의 긍정 키워드리스트
 * 최종 목표와 세부 목표 설정
 * 일지 기록 방식 - 텍스트 또는 음성녹음
