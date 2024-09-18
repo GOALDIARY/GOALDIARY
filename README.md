@@ -41,3 +41,6 @@
 ![그림6](https://github.com/user-attachments/assets/0541e493-467c-4c24-a5c2-9f89a08a127f)
 <br><br><br><br><br>
 ![그림2](https://github.com/user-attachments/assets/aae0ccdb-65d6-40cb-9595-8a674ef10294)
+
+## 유스캐이스
+<img width="1163" alt="image" src="https://github.com/user-attachments/assets/9def424d-257f-4ee2-9e58-1facf634dcc6">
